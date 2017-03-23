@@ -6,8 +6,6 @@ from events.serializers import EventSerializer
 
 from events.models import Event
 
-from accounts.serializers import UserSerializer
-
 from sorl.thumbnail import get_thumbnail
 
 

@@ -5,8 +5,6 @@ from actstream import action
 from django.contrib.contenttypes.fields import GenericRelation
 from django.db import models
 from django.db.models.signals import post_save
-from stream_framework.activity import Activity
-from stream_framework.verbs.base import Add
 from accounts.models import User
 from comments.models import Comment
 from events.models import Event
