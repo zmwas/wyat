@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     'newsfeed',
 ]
 
-"""
+
 
 REST_FRAMEWORK = {
       'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -71,7 +71,7 @@ REST_FRAMEWORK = {
     )
 
 }
-"""
+
 
 ACTSTREAM_SETTINGS = {
     'FETCH_RELATIONS': False,
