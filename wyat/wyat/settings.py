@@ -58,25 +58,24 @@ INSTALLED_APPS = [
     'newsfeed',
 ]
 
-'''
+"""
 
 REST_FRAMEWORK = {
       'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',
     ),
 'DEFAULT_PERMISSION_CLASSES': (
- 
+
        'rest_framework.permissions.IsAuthenticated',
       'accounts.permissions.IsAnonCreate',
     )
 
 }
+"""
 
-'''
 ACTSTREAM_SETTINGS = {
     'FETCH_RELATIONS': False,
     'USE_JSONFIELD': False,
-    'GFK_FETCH_DEPTH': 2,
 }
 
 MIDDLEWARE = [

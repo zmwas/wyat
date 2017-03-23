@@ -2,6 +2,8 @@ from actstream.models import Action
 from rest_framework import serializers
 from accounts.models import User
 from accounts.serializers import UserSerializer
+from comments.models import Comment
+from comments.serializers import CommentSerializer
 from events.models import Event
 from gallery.models import Album,Photo
 
@@ -22,6 +24,8 @@ class GenericRelatedField(serializers.RelatedField):
             return PhotoSerializer(value).data
         elif isinstance(value,User):
             return UserSerializer(value).data
+        elif isinstance(value,Comment):
+            return CommentSerializer(value).data
 
 
 

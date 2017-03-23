@@ -74,8 +74,6 @@ class EventSerializer(serializers.ModelSerializer):
 
     venue_id = serializers.PrimaryKeyRelatedField(queryset=Venue.objects.all(), source='venue', write_only=True)
 
-    # A larger version of the image, allows writing
-    event_pic_url = HyperlinkedSorlImageField('1024')
 
 
     class Meta:

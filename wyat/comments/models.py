@@ -21,7 +21,7 @@ class Comment(models.Model):
 
 def comment_activity(sender, instance,created, **kwargs):
     if created:
-       action.send(instance.user, verb='commented on', action_object=instance, target=instance.content_object)
+       action.send(instance.user, action_object=instance,verb='commented on',  target=instance.content_object)
 
 
 post_save.connect(comment_activity, sender=Comment, dispatch_uid=comment_activity)
